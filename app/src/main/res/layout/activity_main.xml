@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TeamNameTextViews"
+                android:text="Team A" />
+
+            <TextView
+                android:id="@+id/scoreA"
+                style="@style/ScoreTextViews"
+                android:text="@string/initial_team_score" />
+
+            <LinearLayout style="@style/PointCategoryLinearLayoutStyle">
+
+                <TextView
+                    style="@style/PointCategoryTextView"
+                    android:text="@string/try_category_acronym" />
+
+                <TextView
+                    style="@style/PointCategoryTextView"
+                    android:text="@string/conversion_category_acronym" />
+
+                <TextView
+                    style="@style/PointCategoryTextView"
+                    android:text="@string/penalty_category_acronym" />
+
+                <TextView
+                    style="@style/PointCategoryTextView"
+                    android:text="@string/drop_goal_category_acronym" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/PointCategoryLinearLayoutStyle"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:id="@+id/tryCountA"
+                    style="@style/PointValueTextView" />
+
+                <TextView
+                    android:id="@+id/conversionCountA"
+                    style="@style/PointValueTextView" />
+
+                <TextView
+                    android:id="@+id/penaltyCountA"
+                    style="@style/PointValueTextView" />
+
+                <TextView
+                    android:id="@+id/dropGoalCountA"
+                    style="@style/PointValueTextView" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/tryButtonA"
+                style="@style/GeneralButton"
+                android:text="@string/try_button_name" />
+
+            <Button
+                android:id="@+id/conversionButtonA"
+                style="@style/GeneralButton"
+                android:text="@string/conversion_button_name" />
+
+            <Button
+                android:id="@+id/penaltyButtonA"
+                style="@style/GeneralButton"
+                android:text="@string/penalty_button_name" />
+
+            <Button
+                android:id="@+id/dropGoalButtonA"
+                style="@style/GeneralButton"
+                android:text="@string/drop_goal_button_name" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TeamNameTextViews"
+                android:text="Team B" />
+
+            <TextView
+                android:id="@+id/scoreB"
+                style="@style/ScoreTextViews"
+                android:text="@string/initial_team_score" />
+
+            <LinearLayout style="@style/PointCategoryLinearLayoutStyle">
+
+                <TextView
+                    style="@style/PointCategoryTextView"
+                    android:text="@string/try_category_acronym" />
+
+                <TextView
+                    style="@style/PointCategoryTextView"
+                    android:text="@string/conversion_category_acronym" />
+
+                <TextView
+                    style="@style/PointCategoryTextView"
+                    android:text="@string/penalty_category_acronym" />
+
+                <TextView
+                    style="@style/PointCategoryTextView"
+                    android:text="@string/drop_goal_category_acronym" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/PointCategoryLinearLayoutStyle"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:id="@+id/tryCountB"
+                    style="@style/PointValueTextView" />
+
+                <TextView
+                    android:id="@+id/conversionCountB"
+                    style="@style/PointValueTextView" />
+
+                <TextView
+                    android:id="@+id/penaltyCountB"
+                    style="@style/PointValueTextView" />
+
+                <TextView
+                    android:id="@+id/dropGoalCountB"
+                    style="@style/PointValueTextView" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/tryButtonB"
+                style="@style/GeneralButton"
+                android:text="@string/try_button_name" />
+
+            <Button
+                android:id="@+id/conversionButtonB"
+                style="@style/GeneralButton"
+                android:text="@string/conversion_button_name" />
+
+            <Button
+                android:id="@+id/penaltyButtonB"
+                style="@style/GeneralButton"
+                android:text="@string/penalty_button_name" />
+
+            <Button
+                android:id="@+id/dropGoalButtonB"
+                style="@style/GeneralButton"
+                android:text="@string/drop_goal_button_name" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="resetScores"
+        android:text="Reset" />
+
+</RelativeLayout>

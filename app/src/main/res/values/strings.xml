@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Rugby Score Keeper</string>
+    <string name="initial_team_score">0</string>
+    <string name="try_category_acronym">T</string>
+    <string name="conversion_category_acronym">C</string>
+    <string name="penalty_category_acronym">P</string>
+    <string name="drop_goal_category_acronym">D</string>
+    <string name="try_button_name">Try</string>
+    <string name="conversion_button_name">Conversion</string>
+    <string name="penalty_button_name">Penalty</string>
+    <string name="drop_goal_button_name">Drop Goal</string>
+</resources>
