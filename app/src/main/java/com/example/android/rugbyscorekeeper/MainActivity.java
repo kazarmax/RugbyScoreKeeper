@@ -7,7 +7,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Team teamA, teamB;
+    private Team teamA;
+    private Team teamB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

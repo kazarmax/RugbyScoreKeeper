@@ -69,22 +69,22 @@ public class Team {
     }
 
     public void incrementTryCount() {
-        tryCount += 1;
+        tryCount++;
         score += TRY_POINTS;
     }
 
     public void incrementConversionCount() {
-        conversionCount += 1;
+        conversionCount++;
         score += CONVERSION_POINTS;
     }
 
     public void incrementPenaltyCount() {
-        penaltyCount += 1;
+        penaltyCount++;
         score += PENALTY_POINTS;
     }
 
     public void incrementDropGoalCount() {
-        dropGoalCount += 1;
+        dropGoalCount++;
         score += DROP_GOAL_POINTS;
     }
 
